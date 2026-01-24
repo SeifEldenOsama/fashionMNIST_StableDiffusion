@@ -94,6 +94,38 @@ The primary way to interact with this project is through the Jupyter Notebooks i
 
 3.  **Generation:** Open `fashionMNIST_stableDiffusionApplication.ipynb` to load the trained models and begin generating new, synthetic images of FashionMNIST items. You can experiment with different noise levels and sampling steps.
 
+## 📁 Project Structure Update
+
+The repository has been organized into a modular structure under the `src/` directory:
+
+- `src/config.py`: Configuration parameters for models and training.
+- `src/dataset.py`: Data loading utilities for FashionMNIST.
+- `src/models/`:
+  - `vae.py`: Variational Autoencoder implementation.
+  - `unet.py`: UNet-based Epsilon model for diffusion.
+  - `diffusion.py`: Denoising Diffusion Probabilistic Model (DDPM) logic.
+- `src/utils.py`: General utility functions (checkpoints, embeddings).
+- `src/train_vae.py`: Script to pre-train the VAE.
+- `src/train_diffusion.py`: Script to train the latent diffusion model.
+- `src/sample.py`: Script to generate samples from the trained models.
+
+### Usage
+
+To train the VAE:
+```bash
+python3 -m src.train_vae
+```
+
+To train the Diffusion model:
+```bash
+python3 -m src.train_diffusion
+```
+
+To generate samples:
+```bash
+python3 -m src.sample
+```
+
 ## 👥 Team Members
 
 This project was developed by:
