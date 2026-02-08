@@ -135,7 +135,3 @@ This project was developed by:
 *   Habiba Ashraf
 *   Mohamed Badr
 *   Mohamed AbdAlwanis
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
